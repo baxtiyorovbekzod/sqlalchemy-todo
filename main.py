@@ -1,5 +1,5 @@
 from datetime import date
- 
+from database import get_db 
 from crud import (
     create_teacher,
     get_teachers,
@@ -16,7 +16,7 @@ from crud import (
 
 teachers = get_teachers()
 print("All Teachers:", teachers)
-
+get_db()
 # t = get_one_teacher(1)
 # print("One Teacher:", t)
 
